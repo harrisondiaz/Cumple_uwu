@@ -26,14 +26,14 @@
         <ul>
             <li v-for="(acertijo, index) in acertijos" :key="'acertijo-' + index">
                 <span v-if="desbloquearAcertijo(index)">{{ desencriptar(acertijo.texto) }}</span>
-                <span v-else>🔒 Mensaje encriptado</span>
+                <span v-else>🔒 Este mensaje no esta disponible aun.</span>
             </li>
         </ul>
         <h3>Frases:</h3>
         <ul>
             <li v-for="(frase, index) in frases" :key="'frase-' + index">
                 <span v-if="desbloquearFrase(index)">{{ frase.texto }}</span>
-                <span v-else>🔒 Mensaje encriptado</span>
+                <span v-else>🔒  Este mensaje no esta disponible aun.</span>
             </li>
         </ul>
     </div>
