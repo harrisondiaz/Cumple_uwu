@@ -203,7 +203,7 @@ export default {
           return index <= frasesDesbloqueadas;
       },lanzarConfetiAleatorio() {
           this.lanzarConfeti();
-          const tiempoAleatorio = Math.random() * (5000 - 1000) + 1000; 
+          const tiempoAleatorio = Math.random() * (5000 - 1000) + 1000;
           setTimeout(() => {
               this.lanzarConfetiAleatorio();
           }, tiempoAleatorio);
@@ -213,7 +213,6 @@ export default {
   mounted() {
     this.actualizarCuentaRegresiva();
     setInterval(this.actualizarCuentaRegresiva, 1000);
-
     this.lanzarConfetiAleatorio();
   }
 };
