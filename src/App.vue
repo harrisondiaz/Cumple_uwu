@@ -58,6 +58,9 @@ export default {
             desbloqueado: true
         },
       {
+          texto: "\"Si he de amar que sea a un loco, loco de remate, que se deje engullir por el dragón para luego salir de su vientre estirando las comisuras de la boca hasta convertirla en una sonrisa.\" - Laura Esquivel, \"Como agua para chocolate\".",
+              desbloqueado: false
+      },{
           texto: "No hay remedio para el amor, excepto amar más. - Henry David Thoreau, Diarios",
               desbloqueado: false
       },
