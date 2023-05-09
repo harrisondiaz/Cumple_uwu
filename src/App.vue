@@ -25,8 +25,8 @@
         <h3>Acertijos:</h3>
         <ul>
             <li v-for="(acertijo, index) in acertijos" :key="'acertijo-' + index">
-                <span v-if="desbloquearAcertijo(index)">{{ desencriptar(acertijo.texto) }}</span>
-                <span v-else>🔒 Este mensaje no esta disponible aun.</span>
+                <span  v-if="desbloquearAcertijo(index)">{{ desencriptar(acertijo.texto) }}</span>
+                <span  v-else>🔒 Este mensaje no esta disponible aun.</span>
             </li>
         </ul>
         <h3>Frases:</h3>
@@ -48,7 +48,7 @@ export default {
   name: "App",
   data() {
     return {
-      fechaCumpleanos: "2023-06-01 20:00:00",
+      fechaCumpleanos: "2023-05-31 21:15:00",
       dias: 0,
       horas: 0,
       minutos: 0,
