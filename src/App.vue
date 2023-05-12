@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <h1>Mi pequeña Nutria 🦦<br>Tu regalo de cumpleaños estara listo en:</h1>
+        <!--<h1>Mi pequeña Nutria 🦦<br>Tu regalo de cumpleaños estara listo en:</h1>
         <div class="countdown">
             <div class="countdown-element">
                 <div class="countdown-value">{{ dias }}</div>
@@ -36,6 +36,10 @@
                 <span v-else>🔒  Este mensaje no esta disponible aun.</span>
             </li>
         </ul>
+    </div>-->
+        <H1>Lo sentimos, este sitio esta deshabilitado, por cuestiones de mantenimiento! <br> Intentalo más tarde
+        <br> Eror 404
+        </H1>
     </div>
 </template>
 
@@ -214,9 +218,9 @@ export default {
 
   },
   mounted() {
-    this.actualizarCuentaRegresiva();
+    /*this.actualizarCuentaRegresiva();
     setInterval(this.actualizarCuentaRegresiva, 1000);
-    this.lanzarConfetiAleatorio();
+    this.lanzarConfetiAleatorio();*/
   }
 };
 </script>
