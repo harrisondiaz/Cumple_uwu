@@ -37,9 +37,9 @@
             </li>
         </ul>
     </div>-->
-        <H1>Lo sentimos, este sitio esta deshabilitado, por cuestiones de mantenimiento! <br> Intentalo más tarde
-        <br> Eror 404
-        </H1>
+        <p>Error 500: Error interno del servidor
+            Lo sentimos, ha ocurrido un error inesperado en el servidor al intentar procesar su solicitud. Por favor, inténtelo de nuevo más tarde o contacte al administrador del sitio web si el problema persiste.
+        </p>
     </div>
 </template>
 
