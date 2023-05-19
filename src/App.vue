@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <!--<h1>Mi pequeña Nutria 🦦<br>Tu regalo de cumpleaños estara listo en:</h1>
+        <h1>Mi pequeña Nutria 🦦<br>Tu regalo de cumpleaños estara listo en:</h1>
         <div class="countdown">
             <div class="countdown-element">
                 <div class="countdown-value">{{ dias }}</div>
@@ -36,10 +36,6 @@
                 <span v-else>🔒  Este mensaje no esta disponible aun.</span>
             </li>
         </ul>
-    </div>-->
-        <p>Error 500: Error interno del servidor
-            Lo sentimos, ha ocurrido un error inesperado en el servidor al intentar procesar su solicitud. Por favor, inténtelo de nuevo más tarde o contacte al administrador del sitio web si el problema persiste.
-        </p>
     </div>
 </template>
 
@@ -61,47 +57,58 @@ export default {
             texto: "El amor no mira con los ojos, sino con el alma. - William Shakespeare, Sueño de una noche de verano",
             desbloqueado: true
         },
-      {
-          texto: "\"Si he de amar que sea a un loco, loco de remate, que se deje engullir por el dragón para luego salir de su vientre estirando las comisuras de la boca hasta convertirla en una sonrisa.\" - Laura Esquivel, \"Como agua para chocolate\".",
-              desbloqueado: false
-      },{
-          texto: "No hay remedio para el amor, excepto amar más. - Henry David Thoreau, Diarios",
-              desbloqueado: false
-      },
-      {
-          texto: "Cada vez que te miro, te imagino, te deseo, te amo. - Anaïs Nin, Diarios",
-              desbloqueado: false
-      },
-      {
-          texto: "El amor no consiste en mirarse el uno al otro, sino en mirar juntos en la misma dirección. - Antoine de Saint-Exupéry, El Principito",
-              desbloqueado: false
-      },
-      {
-          texto: "El amor es un fuego invisible, una herida placentera, un gusto sabroso de veneno, una dulce amargura, un deleitable dolor, una alegre tormenta, una fiera y juguetona calma. - Fernando de Rojas, La Celestina",
-              desbloqueado: false
-      },
-      {
-          texto: "El amor es la única respuesta que conocemos al miedo y a la oscuridad. - Alice Walker, La tercera vida de Grange Copeland",
-              desbloqueado: false
-      },
-      {
-          texto: "Ser amado profundamente por alguien te da fuerza, mientras que amar a alguien profundamente te da coraje. - Lao Tzu",
-              desbloqueado: false
-      },
-      {
-          texto: "El amor es la fuerza más sutil del mundo. - Mahatma Gandhi",
-              desbloqueado: false
-      },
-      {
-          texto: "El amor es una condición en la que la felicidad de otra persona es esencial para la propia. - Robert A. Heinlein, Extraño en tierra extraña",
-              desbloqueado: false
-      },
-      {
-          texto: "El amor no tiene edad, siempre está naciendo. - Blaise Pascal, Pensamientos",
-              desbloqueado: false
-      }
-  ],
-
+            {
+                texto: "\"Si he de amar que sea a un loco, loco de remate, que se deje engullir por el dragón para luego salir de su vientre estirando las comisuras de la boca hasta convertirla en una sonrisa.\" - Laura Esquivel, \"Como agua para chocolate\".",
+                desbloqueado: false
+            },{
+                texto: "No hay remedio para el amor, excepto amar más. - Henry David Thoreau, Diarios",
+                desbloqueado: false
+            },
+            {
+                texto: "Cada vez que te miro, te imagino, te deseo, te amo. - Anaïs Nin, Diarios",
+                desbloqueado: false
+            },
+            {
+                texto: "El amor no consiste en mirarse el uno al otro, sino en mirar juntos en la misma dirección. - Antoine de Saint-Exupéry, El Principito",
+                desbloqueado: false
+            },
+            {
+                texto: "El amor es un fuego invisible, una herida placentera, un gusto sabroso de veneno, una dulce amargura, un deleitable dolor, una alegre tormenta, una fiera y juguetona calma. - Fernando de Rojas, La Celestina",
+                desbloqueado: false
+            },
+            {
+                texto: "El amor es la única respuesta que conocemos al miedo y a la oscuridad. - Alice Walker, La tercera vida de Grange Copeland",
+                desbloqueado: false
+            },
+            {
+                texto: "Ser amado profundamente por alguien te da fuerza, mientras que amar a alguien profundamente te da coraje. - Lao Tzu",
+                desbloqueado: false
+            },
+            {
+                texto: "El amor es la fuerza más sutil del mundo. - Mahatma Gandhi",
+                desbloqueado: false
+            },
+            {
+                texto: "El amor es una condición en la que la felicidad de otra persona es esencial para la propia. - Robert A. Heinlein, Extraño en tierra extraña",
+                desbloqueado: false
+            },
+            {
+                texto: "El amor no tiene edad, siempre está naciendo. - Blaise Pascal, Pensamientos",
+                desbloqueado: false
+            },{
+                texto: "\"Eres mi sendero. Eres mi luz en tiempos oscuros.\" - Peter Parker, Spider-Man 3",
+                desbloqueado: false
+            },{
+                texto: "\"Todavía soy Spider-Man. Pero ahora también tengo que ser Peter Parker. Y necesito que estés a mi lado.\" - Peter Parker, Spider-Man 2",
+                desbloqueado: false
+            },{
+                texto: "\"¿Sabes lo que siempre he querido hacer? Estar contigo.\" - Peter Parker, The Amazing Spider-Man",
+                desbloqueado: false
+            }, {
+                texto: "\"Te amé como amé a muy pocos; con ternura, con devoción, con un amor tan real que nada más podría existir, sino tú en mi universo.\" - Paulo Coelho",
+                desbloqueado: false
+            }
+        ],
         acertijos: [
             {
                 texto: 'U2FsdGVkX1/vOv3WNQzNh+5mQEPpkljQwY+X+2y/jxyoSWAQO4W1Ha1T1Ux4Qb+/OcPmI3pQTFeVHGM+j1rehg==',
@@ -162,6 +169,9 @@ export default {
             {
                 texto: 'U2FsdGVkX1+6o4GifI1UpXqbJBWAtGMJIDJGUlA5xIHOXtvIIOV0T1k5zT+BaH3wG+DJGNV0awf57nK/puMFRw==',
                 desbloqueado: false
+            },{
+                "texto": "U2FsdGVkX19pcnWL/1cPyWji5gY6e21J/8dRhFld1KeWM5sXuhOJV0iDBKyDqjoyknDdMHwWWlXOPdJhta4akVcNNEPdgzM+6SoLUT5ulE7OK3gzPfgUGnb9N7cLFSbO",
+                "desbloqueado": false
             }
         ],
 
@@ -206,7 +216,7 @@ export default {
           const inicio = new Date("2023-05-05");
           const ahora = new Date();
           const diasTranscurridos = Math.floor((ahora - inicio) / (1000 * 60 * 60 * 24));
-          const frasesDesbloqueadas = diasTranscurridos;
+          const frasesDesbloqueadas = (diasTranscurridos/2);
           return index <= frasesDesbloqueadas;
       },lanzarConfetiAleatorio() {
           this.lanzarConfeti();
@@ -218,9 +228,9 @@ export default {
 
   },
   mounted() {
-    /*this.actualizarCuentaRegresiva();
+    this.actualizarCuentaRegresiva();
     setInterval(this.actualizarCuentaRegresiva, 1000);
-    this.lanzarConfetiAleatorio();*/
+    this.lanzarConfetiAleatorio();
   }
 };
 </script>
