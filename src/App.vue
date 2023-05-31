@@ -199,7 +199,7 @@ export default {
       const ahora = new Date();
       const diasTranscurridos = Math.floor((ahora - inicio) / (1000 * 60 * 60 * 24));
       const acertijosDesbloqueados = Math.floor(diasTranscurridos / 2);
-      return index <= acertijosDesbloqueados;
+      return true;
     },
       desencriptar(textoEncriptado) {
           const claveSecreta = "X9r&F$h6qZ3^Uk!d*S2wJb+Q";
@@ -217,7 +217,7 @@ export default {
           const ahora = new Date();
           const diasTranscurridos = Math.floor((ahora - inicio) / (1000 * 60 * 60 * 24));
           const frasesDesbloqueadas = (diasTranscurridos/2);
-          return index <= frasesDesbloqueadas;
+          return true;
       },lanzarConfetiAleatorio() {
           this.lanzarConfeti();
           const tiempoAleatorio = Math.random() * (5000 - 1000) + 1000;
